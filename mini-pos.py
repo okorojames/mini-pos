@@ -9,4 +9,8 @@ if yourName == "":
 else:
     putUssd = str(input(f"Please {yourName}, put \n Input The USSD: "))
     if putUssd == ussd:
-        option = str(input(f"{yourName}, select from the followinf options: \n1: Deposit\n2: Withdraw\n3: Check Balance"))
+        option = str(input(f"{yourName}, select from the following options: \n1: Deposit\n2: Withdraw\n3: Check Balance\n  "))
+    elif putUssd == "":
+        print(f"{yourName}, You can't submit and empty option.")
+    else:
+        print(f"{yourName}, Please, this does\'nt look like a valid code.")
