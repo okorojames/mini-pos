@@ -14,11 +14,21 @@ else:
         #
         #
         if option == numOne:
-            depoAmount = int(input(f"Please Enter Amount: ")) 
+            depoAmount = int(input("Please Enter Amount: ")) 
             print('Please wait...')
             sleep(5)
             print(f'Transaction successful\nNew bal is: {balAmount + depoAmount}')
-        # 
+        elif option == numTwo:
+            withAmount = int(input("Please Enter Amount: "))
+            if withAmount >= balAmount:
+                print(f'{yourName}, You can\'nt withdraw all or above available balance.')
+                exit()
+            else:
+                print('Please wait...')
+                sleep(3.5)
+                print(f"Transaction successful,\nNew bal is: {balAmount - withAmount}")
+       
+             # 
         # 
     elif putUssd == "":
         print(f"{yourName}, You can't submit and empty option.")
