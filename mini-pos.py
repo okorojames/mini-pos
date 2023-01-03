@@ -27,6 +27,10 @@ else:
                 print('Please wait...')
                 sleep(3.5)
                 print(f"Transaction successful,\nNew bal is: {balAmount - withAmount}")
+        elif option == numThree:
+            print('Please wait...')
+            sleep(5)
+            print(f"{yourName}, Your current bal is: {balAmount}")
        
              # 
         # 
